@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-class CommonScreen {
+public class CommonScreen {
     
     private init() {}
     static let shared = CommonScreen()

@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-class ElementLocator {
+public class ElementLocator {
      
   class func locateElement(elementType: XCUIElement.ElementType, name: String) -> XCUIElement? {
       var element: XCUIElement?

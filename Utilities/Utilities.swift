@@ -6,7 +6,7 @@
 //
 
 import Foundation
-extension Date {
+public extension Date {
      
   func getCurrentDateAndTime() -> String {
       let dateFormatter = DateFormatter()
@@ -28,7 +28,7 @@ extension Date {
 
 }
 
-class RandomString {
+public class RandomString {
     class func getRandomString(length: Int = 10) -> String {
       //let length = 10
       let charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
