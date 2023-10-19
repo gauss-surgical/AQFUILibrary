@@ -10,16 +10,16 @@ import XCTest
 
 public class CommonScreen {
     
-    private init() {}
-    static let shared = CommonScreen()
-    static var patientName = ""
-    static var appMode = ""
-    static var longNote = ""
+    public init() {}
+    public static let shared = CommonScreen()
+    public static var patientName = ""
+    public static var appMode = ""
+    public static var longNote = ""
 }
 
 
 // MARK: Common Verifications
-extension CommonScreen {
+public extension CommonScreen {
     
     func verifyScreen(screenName: String?) {
         guard let screenName = screenName else {
@@ -114,7 +114,7 @@ extension CommonScreen {
     }
 
 // MARK: Common Actions
-extension CommonScreen {
+public extension CommonScreen {
     
   func swipeUpUntilElementFound(element : XCUIElement, maxNumberOfSwipes : UInt) -> Bool{
             if element.exists{

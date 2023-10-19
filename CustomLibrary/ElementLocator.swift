@@ -54,7 +54,7 @@ public class ElementLocator {
   }
 }
 
-extension ElementLocator {
+public extension ElementLocator {
   
     class func getName(name: String) -> String {
       if name == "Settings" {
